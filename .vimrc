@@ -62,9 +62,9 @@ function! s:PicoLisp()
   hi def PicoLispString ctermfg=76 guifg=#5fd700 cterm=bold gui=bold 
 
   
-  map <F2> v%:!pil editor.l -e %
-"  map <F3> v%:!pil editor.l -a %
-"  map <F4> v%:!pil editor.l -t %
+  map <F2> v%:!pil % editor.l -e 
+  map <F3> v%:!pil % editor.l -a
+  map <F4> v%:!pil % editor.l -t
 
 
 endfunction
