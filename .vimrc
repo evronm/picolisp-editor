@@ -62,10 +62,10 @@ function! s:PicoLisp()
   hi def PicoLispString ctermfg=76 guifg=#5fd700 cterm=bold gui=bold 
 
   
-  map <F2> mzy%v%:!pilP0%a
+  map <F2> v%:!pil editor.l -e %
+"  map <F3> v%:!pil editor.l -a %
+"  map <F4> v%:!pil editor.l -t %
 
-  map <F3> ("ay%jf>l"by$G?expect(%O(a "" b)`z
-  map <F4> ("ay%jv$/->k$"byjf> "cy$G?expect(%O(a b c)`z
 
 endfunction
 "inoremap " ""<left>

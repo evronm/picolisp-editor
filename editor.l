@@ -5,14 +5,13 @@
 
 (setq In (in () (read)))
 
-(de e () 
-  (println In)
+(de e ()
   (println (eval In))
 )
 
 (de a ()
   (prin "~")
-  (println '(assert (= (eval In) (~In) )))
+  (println '(assert (= ~(eval In) (~In) )))
 )
 
 (de t () 
@@ -21,3 +20,4 @@
 
 (load T)
 (bye)
+
