@@ -65,7 +65,9 @@ function! s:PicoLisp()
   map <F2> v%:!pil % @bin/editor.l -e
   map <F3> v%:!pil % @bin/editor.l -a
   map <F4> v%:!pil % @bin/editor.l -t
-
+  map \c F(i#{l%a}#hh%
+  vmap \c '<i#{'>a}#hh%
+  map \a F#xxf}xxF(
 
 endfunction
 "inoremap " ""<left>
